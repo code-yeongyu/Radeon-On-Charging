@@ -106,13 +106,18 @@ def set_graphics_switching():
         toggle_graphics_switching()
 
 
+def notify_toggle():
+    pync.notify(toggle_graphics_switching())
+
+
 def main():
+    pync.notify("GPU Changer Service Started.")
     set_graphics_switching()
     while True:
         recent_charging_log = is_battery_charging()
         sleep(5)
         if is_battery_charging() != recent_charging_log:
-            Thread(target=toggle_graphics_switching, args=()).start()
+            Thread(target=notify_toggle, args=()).start()
 
 
 main()
