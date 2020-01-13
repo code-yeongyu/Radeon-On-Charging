@@ -1,3 +1,7 @@
+# What is this?
+
+It's a simple python script that automatically changes your Macbook to use Radeon Graphics when you connect to a charger.
+
 # How to use?
 
 Clone this project, and make sure you know the directory of this python script.  
