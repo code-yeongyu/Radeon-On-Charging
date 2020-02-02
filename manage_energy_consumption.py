@@ -31,9 +31,9 @@ tell application "System Events" to tell ¬
 end tell
 quit application "System Preferences"
 if gr then
-    return "GPU: INTEL UHD GRAPHICS 630"
+    return "GPU: INTEGRATED"
 else
-    return "GPU: RADEON PRO 560X"
+    return "GPU: RADEON"
 end if """
 
 OSASCRIPT_GET_GRAPHICS_SWITCHING = """if running of application "System Preferences" then
