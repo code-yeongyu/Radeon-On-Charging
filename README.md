@@ -1,3 +1,5 @@
+[한국어 README](https://github.com/code-yeongyu/radeon-on-charging/blob/master/readme_kor.md)
+
 # What is this?
 
 It's a simple python script that automatically changes your Macbook to use Radeon Graphics when you connect to a charger.
